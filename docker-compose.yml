@@ -1,0 +1,9 @@
+services:
+  structurizr:
+    image: structurizr/lite:latest
+    container_name: artoo_structurizr
+    restart: no
+    ports:
+      - "7232:8080"
+    volumes:
+      - ./diagrams:/usr/local/structurizr
