@@ -5,36 +5,16 @@ workspace "R2D2 Electronics" "Overview of R2D2's electronic system." {
     model {
         p = person "Puppeteer / Controller(s)"
         ss = softwareSystem "R2D2" {
-            btm = container "Bluetooth Module" {
-                tags = "Interface"
-            }
-            amega = container "Arduino Mega" {
-                tags = "Logic"
-            }
-            mark = container "Markduino" {
-                tags = "Logic"
-            }
-            mp3 = container "MP3 Player" {
-                tags = "Storage"
-            }
-            amp = container "Amplifier" {
-                tags = "Interface"
-            }
-            spkrs = container "Speakers" {
-                tags = "Terminate"
-            }
-            delec = container "Dome Electronics" {
-                tags = "Terminate"
-            }
-            lfmotor = container "Left Foot Motor" {
-                tags = "Terminate"
-            }
-            rfmotor = container "Right Foot Motor" {
-                tags = "Terminate"
-            }
-            dmotor = container "Dome Motor" {
-                tags = "Terminate"
-            }
+            btm = container "Bluetooth Module"
+            amega = container "Arduino Mega"
+            mark = container "Markduino"
+            mp3 = container "MP3 Player"
+            amp = container "Amplifier"
+            spkrs = container "Speakers"
+            delec = container "Dome Electronics"
+            lfmotor = container "Left Foot Motor"
+            rfmotor = container "Right Foot Motor"
+            dmotor = container "Dome Motor"
         }
 
         p -> ss.btm "Sends instructions to"
@@ -93,5 +73,4 @@ workspace "R2D2 Electronics" "Overview of R2D2's electronic system." {
     configuration {
         scope softwaresystem
     }
-
 }
