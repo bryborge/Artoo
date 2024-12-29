@@ -1,6 +1,6 @@
 # Artoo (Detoo)
 
-Resources, code/sketches, and documentation related to building various Astromech droids.
+Resources, code/sketches, and documentation related to building the Astromech droid R2D2.
 
 ## References
 
