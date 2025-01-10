@@ -1,3 +1,6 @@
 # diagrams/ - Structurizr
 .structurizr/
 workspace.json
+
+# Misc
+.DS_Store
